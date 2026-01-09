@@ -5,6 +5,8 @@ use InvalidArgumentException;
 use function count;
 
 trait PostalAddressTrait {
+    use NormalizesStringsTrait;
+
     protected $address = [];
     protected $city = null;
     protected $postalCode = null;
